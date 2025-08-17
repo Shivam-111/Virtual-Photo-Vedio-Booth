@@ -1,0 +1,79 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(to bottom,#ff7eff,#feb47b,#007BFF);
+  margin-top: 0;
+}
+
+#heading{
+  margin-top:0px;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 30px;
+}
+
+#camera{
+  font-size: 40px;
+}
+
+video, canvas {
+  border: 2px solid #333;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#takephoto, #startRecord, #stopRecord {
+  height: 40px;
+  width: 180px;
+  margin: 5px;
+  padding:5px;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#takephoto {
+  background-color: rgb(190, 190, 65);
+  font-weight: bold;
+  color: white;
+}
+#startRecord {
+  background-color: green;
+  color: white;
+}
+#stopRecord {
+  background-color: red;
+  color: white;
+}
+
+.filters button {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #333;
+  color: white;
+  cursor: pointer;
+}
+.filters button.active {
+  background: #007BFF;
+}
+
+#gallery {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+#gallery img, #gallery video {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #444;
+}
